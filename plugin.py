@@ -114,7 +114,7 @@ class BasePlugin:
                 Domoticz.Log('Total system power: {0:.3f} W'.format(Total_System_Power))
                 Domoticz.Log('Import Wh since last reset: {0:.3f} kWh'.format(Import_Wh_since_last_reset))
                 Domoticz.Log('Export Wh since last reset: {0:.3f} kWh'.format(Export_Wh_since_last_reset))
-                Domoticz.Log('Total kwh: {0:.3f} kWh'.format(Total_kwh)
+                Domoticz.Log('Total kwh: {0:.3f} kWh'.format(Total_kwh))
                 Domoticz.Log('Settable total kWh: {0:.3f} kWh'.format(Settable_total_kWh))
                 Domoticz.Log('Settable import kWh: {0:.3f} kWh'.format(Settable_import_kWh))
                 Domoticz.Log('Settable export kWh: {0:.3f} kWh'.format(Settable_export_kWh))
