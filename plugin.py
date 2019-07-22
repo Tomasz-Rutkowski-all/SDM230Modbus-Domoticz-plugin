@@ -9,7 +9,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="SDM72D" name="Eastron SDM72D-Modbus" version="0.0.1" author="bbossink">
+<plugin key="SDM72D" name="Eastron SDM72D-Modbus" version="0.0.22" author="bbossink">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
