@@ -9,7 +9,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="SDM72D" name="Eastron SDM72D-Modbus" version="0.0.22" author="bbossink">
+<plugin key="SDM72D" name="Eastron SDM72D-Modbus" version="0.0.3" author="bbossink">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
@@ -62,7 +62,7 @@ class BasePlugin:
             Domoticz.Device(Name="Export Wh since last reset", Unit=3,Type=0x71,Subtype=0x0,Used=0).Create()
         Options = { "Custom" : "1;kVArh"} 
         if 4 not in Devices:
-            Domoticz.Device(Name="Total kWh", Unit=4,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Total kWh", Unit=4,Type=0x71,Subtype=0x0,Used=0).Create()
         Options = { "Custom" : "1;kVArh"}
         if 5 not in Devices:
             Domoticz.Device(Name="Settable total kWh", Unit=5,Type=0x71,Subtype=0x0,Used=0).Create()
