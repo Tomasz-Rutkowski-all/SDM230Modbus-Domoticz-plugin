@@ -1,9 +1,11 @@
-# SDM630-Modbus
-SDM630-Modbus 3P4W Multifunction Power Analyser WithRS485 Port modbus RTU for the domoticz plugin
+# SDM72D-Modbus
+SDM72D-Modbus 3-fase power meter  with RS485 Port modbus RTU for the domoticz plugin
+
+Original code bij MFxMF for the SDM630-M power meter https://github.com/MFxMF/SDM630-Modbus
 
 Installation: <br>
 cd ~/domoticz/plugins<br>
-git clone https://github.com/MFxMF/SDM630-Modbus <br>
+git clone https://github.com/bbossink/SDM72D-Modbus-Domoticz-plugin <br>
 
 <br>
 Used python modules: <br>
@@ -13,5 +15,5 @@ minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
 Restart your domoticz server.
 <br>
 <br>
-Tested on domoticz 3.9319
+Tested on domoticz 4.10717
 
