@@ -65,13 +65,13 @@ class BasePlugin:
             Domoticz.Device(Name="Total kWh", Unit=4,Type=0x71,Subtype=0x0,Used=0).Create()
         Options = { "Custom" : "1;kVArh"}
         if 5 not in Devices:
-            Domoticz.Device(Name="Voltage", Unit=5,Type=0x08,Subtype=0x0,Used=0).Create()
+            Domoticz.Device(Name="Voltage", Unit=5,Type=0x71,Subtype=0x0,Used=0).Create()
         Options = { "Custom" : "1;V"}
         if 6 not in Devices:
-            Domoticz.Device(Name="Import power", Unit=8,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Import power", Unit=6,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;VA"} 
         if 7 not in Devices:
-            Domoticz.Device(Name="Export power", Unit=9,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Export power", Unit=7,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;VA"} 
                
     def onStop(self):
@@ -83,7 +83,7 @@ class BasePlugin:
             # Get data from SDM72D
             Total_System_Power = self.rs485.read_float(84, functioncode=4, numberOfRegisters=2)
             Import_Wh = self.rs485.read_float(72, functioncode=4, numberOfRegisters=2)
-            Export_Wh = self.rs485.read_float(73, functioncode=4, numberOfRegisters=2)
+            Export_Wh = self.rs485.read_float(74, functioncode=4, numberOfRegisters=2)
             Total_kwh = self.rs485.read_float(342, functioncode=4, numberOfRegisters=2)
             Voltage = self.rs485.read_float(0, functioncode=4, numberOfRegisters=2)
             Import_power = self.rs485.read_float(88, functioncode=4, numberOfRegisters=2)
