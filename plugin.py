@@ -81,13 +81,13 @@ class BasePlugin:
         self.runInterval -=1;
         if self.runInterval <= 0:
             # Get data from SDM72D
-            Total_System_Power = self.rs485.read_float(85, functioncode=4, numberOfRegisters=2)
-            Import_Wh = self.rs485.read_float(73, functioncode=4, numberOfRegisters=2)
-            Export_Wh = self.rs485.read_float(75, functioncode=4, numberOfRegisters=2)
-            Total_kwh = self.rs485.read_float(343, functioncode=4, numberOfRegisters=2)
-            Voltage = self.rs485.read_float(1, functioncode=4, numberOfRegisters=2)
-            Import_power = self.rs485.read_float(89, functioncode=4, numberOfRegisters=2)
-            Export_power = self.rs485.read_float(93, functioncode=4, numberOfRegisters=2)
+            Total_System_Power = self.rs485.read_float(84, functioncode=4, numberOfRegisters=2)
+            Import_Wh = self.rs485.read_float(72, functioncode=4, numberOfRegisters=2)
+            Export_Wh = self.rs485.read_float(73, functioncode=4, numberOfRegisters=2)
+            Total_kwh = self.rs485.read_float(342, functioncode=4, numberOfRegisters=2)
+            Voltage = self.rs485.read_float(0, functioncode=4, numberOfRegisters=2)
+            Import_power = self.rs485.read_float(88, functioncode=4, numberOfRegisters=2)
+            Export_power = self.rs485.read_float(92, functioncode=4, numberOfRegisters=2)
             
             #Update devices
             Devices[1].Update(0,str(Total_System_Power))
