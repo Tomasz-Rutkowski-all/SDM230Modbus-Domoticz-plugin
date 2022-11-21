@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Eastron SDM120-Modbus Smart Meter Three Phase Electrical System. The Python plugin for Domoticz
+Eastron SDM230-Modbus Smart Meter Three Phase Electrical System. The Python plugin for Domoticz
 Original author: MFxMF and bbossink
 Modified by: remcovanvugt
 Requirements: 
@@ -9,7 +9,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="SDM120Modbus" name="Eastron SDM120-Modbus" version="1.0.0" author="remcovanvugt">
+<plugin key="SDM230Modbus" name="Eastron SDM230-Modbus" version="1.0.0" author="hhomik">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
@@ -49,7 +49,7 @@ class BasePlugin:
 
         self.rs485.mode = minimalmodbus.MODE_RTU
         devicecreated = []
-        Domoticz.Log("Eastron SDM120 Modbus plugin start")
+        Domoticz.Log("Eastron SDM230 Modbus plugin start")
         self.runInterval = int(Parameters["Mode3"]) * 1 
        
         if 1 not in Devices:
