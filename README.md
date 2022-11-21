@@ -1,5 +1,5 @@
-# SDM72D-Modbus
-SDM72D-Modbus 3-fase power meter with RS485 Port modbus RTU plugin for domoticz
+# SDM230-Modbus NO TESTING
+SDM230-Modbus 3-fase power meter with RS485 Port modbus RTU plugin for domoticz
 
 Original code bij MFxMF for the SDM630-M power meter https://github.com/MFxMF/SDM630-Modbus
 Original code by bbossink for the SDM72-D-M power mether https://github.com/remcovanvugt/SDM120Modbus-Domoticz-plugin
