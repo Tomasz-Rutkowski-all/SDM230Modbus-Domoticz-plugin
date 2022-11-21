@@ -85,7 +85,7 @@ class BasePlugin:
             Import_Wh = self.rs485.read_float(72, functioncode=4, numberOfRegisters=2)
             Export_Wh = self.rs485.read_float(74, functioncode=4, numberOfRegisters=2)
             Total_kwh = self.rs485.read_float(342, functioncode=4, numberOfRegisters=2)
-            Voltage = self.rs485.read_float(0, functioncode=4, numberOfRegisters=2)
+            Voltage = self.rs485.read_float(00, functioncode=4, numberOfRegisters=2)
             Import_power = self.rs485.read_float(88, functioncode=4, numberOfRegisters=2)
             Export_power = self.rs485.read_float(92, functioncode=4, numberOfRegisters=2)
             
