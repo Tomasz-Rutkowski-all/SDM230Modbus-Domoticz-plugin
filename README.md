@@ -6,7 +6,7 @@ Original code by bbossink for the SDM72-D-M power mether https://github.com/remc
 
 Installation: <br>
 cd ~/domoticz/plugins<br>
-git clone https://github.com/remcovanvugt/SDM120Modbus-Domoticz-plugin <br>
+git clone https://github.com/Tomasz-Rutkowski-all/SDM230Modbus-Domoticz-plugin <br>
 <br>
 Configuration: <br>
 Select "Eastron SDM120-Modbus" in Hardware configuration screen<br>
